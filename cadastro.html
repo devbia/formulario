@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>    
+<body>
+
+    <form method="GET" action="cadastros.php" enctype="multipart/form-data">
+        <input type="hidden" name="country" value="BR" />
+
+        <center>
+            
+        <fieldset>
+            <h2>Criar uma conta</h2> 
+            <h5>Já possui uma conta? <a href="login.html" target="_blank">Faça o login</a></h5>
+
+            
+            <label><br/>
+                <input type="text" name="nome" required placeholder="Primeiro nome" /><br/> 
+            </label>
+
+            <label><br/>
+                <input type="text" name="lastname" required placeholder="Sobrenome" /><br/> 
+            </label>
+    
+            <label><br/>
+                <input type="email" name="email" placeholder="E-mail" required/><br/> 
+            </label>
+
+            <label><br/>
+                <input type="password" required placeholder="Senha" /><br/> <br/> 
+            </label>
+
+            <label>
+                <input type="password" required placeholder="Repetir a senha" /><br/>
+            </label>
+
+            <label ><h3>Selecione uma foto abaixo</h3>
+                <input type="file" value="currículo" required  /><br/> 
+            </label>
+            <br/> 
+        
+            
+                <div class="wrapper">
+                    <input id="option" type="checkbox" name="field" value="option" hidden >
+                    <label for="option">Declaro que li e aceito os termos <a href="termos.html" target="_blank" class="termoslink" >Termos de uso</a>.</label>
+                </div>
+                
+            </br></br>
+            <button type="submit">Cadastrar</button>
+            
+
+
+        </fieldset>
+    </center>
+        </form>
+
+    
+</body>
+
+</html>
